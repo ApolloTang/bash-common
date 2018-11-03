@@ -101,24 +101,6 @@ shopt -s cdable_vars # set the bash option so that no '$' is required when using
 alias profileme="history | awk '{print \$2}' | awk 'BEGIN{FS=\"|\"}{print \$1}' | sort | uniq -c | sort -n | tail -n 20 | sort -nr"
 
 
-#/ vimrc -----------------------------------------------------------------
-alias vim-cd='cd $d_conf/vimrc/; lf;'
-
-alias vim-l-diff='diff ~/.vimrc $d_conf/vimrc/_vimrc_lab'
-alias vim-m-diff='diff ~/.vimrc $d_conf/vimrc/_vimrc_master'
-alias vim-kdiff3='kdiff3 $d_conf/vimrc/_vimrc_master ~/.vimrc'
-
-alias vim-l-save='cp ~/.vimrc $d_conf/vimrc/_vimrc_lab'
-alias vim-m-save='cp ~/.vimrc $d_conf/vimrc/_vimrc_master'
-alias vim-l-load='cp $d_conf/vimrc/_vimrc_lab ~/.vimrc'
-alias vim-m-load='cp $d_conf/vimrc/_vimrc_master ~/.vimrc'
-
-alias vim-c-cd='cd /Users/apollotang/.vim/colors/'
-alias vim-c-load='cp $d_conf/vimrc/apollotang.vim /Users/apollotang/.vim/colors/apollotang.vim'
-alias vim-c-save='cp /Users/apollotang/.vim/colors/apollotang.vim $d_conf/vimrc/apollotang.vim'
-alias vim-c-diff='diff $d_conf/vimrc/apollotang.vim /Users/apollotang/.vim/colors/apollotang.vim'
-
-
 #--------------------------------------------------------------------------
 #list dot files
 alias find_ln_dotfile='find . -name ".*" -type l -maxdepth 1 -exec ls -al {} +'
