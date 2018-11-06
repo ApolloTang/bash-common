@@ -27,6 +27,10 @@ npm() {
 }
 
 # The above will replace the default loading nvm script
+# I use it for nvm version 0.33.11 on work computer
+#
+# home computer is 0.24.1 do not have problem.
+# So for now don't update nvm untill they fix this
 #
 # export NVM_DIR="$HOME/.nvm"
 # [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh --no-use"  # This loads nvm
