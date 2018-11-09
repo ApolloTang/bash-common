@@ -2,7 +2,7 @@
 # http://broken-by.me/lazy-load-nvm/
 
 
-nvm() {
+nvm_load() {
     unset -f nvm
     export NVM_DIR=~/.nvm
     [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
@@ -10,7 +10,7 @@ nvm() {
     nvm "$@"
 }
 
-node() {
+node_load() {
     unset -f node
     export NVM_DIR=~/.nvm
     [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
@@ -18,7 +18,7 @@ node() {
     node "$@"
 }
 
-npm() {
+npm_load() {
     unset -f npm
     export NVM_DIR=~/.nvm
     [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
