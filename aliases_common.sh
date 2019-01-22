@@ -41,7 +41,15 @@ alias gb='git branch'
 alias gbc='git rev-parse --abbrev-ref HEAD'   #get current branch
 alias gba='git branch -a'
 alias gmt='git mergetool --tool p4merge'
+
 alias gdf='git diff --no-ext-diff'
+
+alias gdt='git difftool ' #/ default kdiff3
+alias gdt-bc='git difftool -t bcomp '
+
+#/ the next two alias can also work with branch
+alias gdd='git difftool --dir-diff '  #/ default kdiff3
+alias gdd-bc='git difftool -t bcomp --dir-diff '
 
 alias glgl='git log --graph --all --oneline --decorate'
 alias glg='git log --graph --all --oneline --decorate -15'
