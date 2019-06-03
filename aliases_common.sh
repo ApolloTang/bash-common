@@ -9,6 +9,7 @@ alias lfa="ls -Fa"
 alias la="ls -a"
 alias ll="ls -lh"
 alias lla="ls -lah"
+alias lld="ls -ld .!(|.)"  #https://askubuntu.com/questions/468901/how-to-show-only-hidden-files-in-terminal
 alias h=history
 alias rm='rm -i'
 alias rmfr='rm -fri'    # not interactive if -ifr; i can not be 1st
@@ -123,6 +124,13 @@ alias rn='react-native '
 # xcode
 #
 alias simulator-ios='open /Applications/Xcode.app/Contents/Developer/Applications/Simulator.app/'
+
+
+# ------------------------------------------------------------------
+# node
+#
+alias nodeRlwrap='NODE_NO_READLINE=1 rlwrap node '
+
 
 ################################################
 #echo '.bash_aliases reading done'
