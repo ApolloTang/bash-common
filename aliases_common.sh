@@ -61,8 +61,11 @@ alias glr='git log --all --oneline --decorate --reverse -15'
 alias gll='git log --all --oneline --decorate'
 alias gl='git log --all --oneline --decorate -15 '
 
-alias gldl="git log --graph --all --pretty=format:\"%C(yellow) %h %C(auto) %d %C(cyan) %cD %Creset %s\""
-alias gld="git log --graph --all --pretty=format:\"%C(yellow) %h %C(auto) %d %C(cyan) %cD %Creset %s\" -15"
+#/ https://stackoverflow.com/questions/7853332/how-to-change-git-log-date-formats
+alias  gldl="git log --graph --all --date=format:\"%y-%m-%d %H:%M:%S\" --pretty=format:\"%C(yellow) %h %C(auto) %C(cyan) %cd %Creset %s\""
+alias   gld="git log --graph --all --date=format:\"%y-%m-%d %H:%M:%S\" --pretty=format:\"%C(yellow) %h %C(auto) %C(cyan) %cd %Creset %s\" -15"
+alias gldol="git log --graph --all --date-order --date=format:\"%y-%m-%d %H:%M:%S\" --pretty=format:\"%C(yellow) %h %C(auto) %C(cyan) %cd %Creset %s\""
+alias  gldo="git log --graph --all --date-order --date=format:\"%y-%m-%d %H:%M:%S\" --pretty=format:\"%C(yellow) %h %C(auto) %C(cyan) %cd %Creset %s\" -15"
 
 alias gmerge='git merge --no-ff '
 alias gdfni='git diff --no-index '
