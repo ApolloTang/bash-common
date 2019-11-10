@@ -25,6 +25,10 @@ alias top='top -o cpu'
 alias systail='tail -f /var/log/system.log'
 alias m='more'
 alias df='df -h'
+alias iterm='open -a iTerm .'
+
+
+
 
 # Navigation -------------------------------------------------------
 alias ..='cd ..'
