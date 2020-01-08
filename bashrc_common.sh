@@ -7,7 +7,8 @@ export editor_main=mvim
 export DT=$HOME/Desktop
 export HISTCONTROL=ignoredups
 shopt -s checkwinsize   # After each command, checks the windows size and changes lines and columns
-set -o vi               # Use Vim mode
+bindkey -v              # Use Vim mode | https://stackoverflow.com/questions/58187542/how-to-setup-vi-editing-mode-for-zsh
+
 export LESS=-RFX        # color for Less
 
 
