@@ -101,16 +101,18 @@ alias k3="kdiff3 "
 #    You can save a directory using an abbreviation of your choosing. Eg. save ms
 #    You can subsequently move to one of the saved directories by using cd with
 #    the abbreviation you chose. Eg. cd ms  (Note that no '$' is necessary.)
-if [ ! -f ~/.dirs ]; then  # if doesn't exist, create it
-	touch ~/.dirs
-fi
-
-alias show='cat ~/.dirs'
-save (){
-	command sed "/!$/d" ~/.dirs > ~/.dirs1; \mv ~/.dirs1 ~/.dirs; echo "$@"=\"`pwd`\" >> ~/.dirs; source ~/.dirs ;
-}
-source ~/.dirs  # Initialization for the above 'save' facility: source the .sdirs file
-shopt -s cdable_vars # set the bash option so that no '$' is required when using the above facility
+# DOES NOT WORK IN ZSH
+#
+# if [ ! -f ~/.dirs ]; then  # if doesn't exist, create it
+#   touch ~/.dirs
+# fi
+#
+# alias show='cat ~/.dirs'
+# save (){
+#   command sed "/!$/d" ~/.dirs > ~/.dirs1; \mv ~/.dirs1 ~/.dirs; echo "$@"=\"`pwd`\" >> ~/.dirs; source ~/.dirs ;
+# }
+# source ~/.dirs  # Initialization for the above 'save' facility: source the .sdirs file
+# shopt -s cdable_vars # set the bash option so that no '$' is required when using the above facility
 
 #-------------------------------------------------------------------------------
 # Shows most used commands, cool script I got this from: http://lifehacker.com/software/how-to/turbocharge-your-terminal-274317.php
