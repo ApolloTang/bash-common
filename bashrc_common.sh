@@ -9,6 +9,9 @@ export HISTCONTROL=ignoredups
 shopt -s checkwinsize   # After each command, checks the windows size and changes lines and columns
 bindkey -v              # Use Vim mode | https://stackoverflow.com/questions/58187542/how-to-setup-vi-editing-mode-for-zsh
 
+#/ enable the default zsh completions | https://dev.to/saltyshiomix/a-guide-for-upgrading-macos-to-catalina-and-migrating-the-default-shell-from-bash-to-zsh-4ep3
+autoload -Uz compinit && compinit
+
 export LESS=-RFX        # color for Less
 
 
