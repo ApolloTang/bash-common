@@ -12,6 +12,17 @@ bindkey -v              # Use Vim mode | https://stackoverflow.com/questions/581
 export LESS=-RFX        # color for Less
 
 
+###
+# set window title in tmux (not working)
+# -------------------------------
+# https://superuser.com/questions/292652/change-iterm2-window-and-tab-titles-in-zsh
+# https://superuser.com/questions/702156/rename-iterm2-tab-from-within-tmux
+# http://hints.macworld.com/article.php?story=20031015173932306
+DISABLE_AUTO_TITLE="true"
+export PROMPT_COMMAND='echo -ne "\033]0;$PWD\007"'
+echo -ne "\e]1;$PWD\a"
+
+
 ##
 #/ enable the default zsh completions | https://dev.to/saltyshiomix/a-guide-for-upgrading-macos-to-catalina-and-migrating-the-default-shell-from-bash-to-zsh-4ep3
 autoload -Uz compinit && compinit
