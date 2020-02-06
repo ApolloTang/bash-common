@@ -141,5 +141,13 @@ alias simulator-ios='open /Applications/Xcode.app/Contents/Developer/Application
 alias nodeRlwrap='NODE_NO_READLINE=1 rlwrap node '
 
 
+
+# ------------------------------------------------------------------
+# Quick view
+#
+alias lllVimDoc='less $pppVimrc/vimrc-doc.txt'
+alias lllAliasCommon='less $pppBashrcCommon/aliases_common.sh'
+
+
 ################################################
 #echo '.bash_aliases reading done'
