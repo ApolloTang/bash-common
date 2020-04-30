@@ -56,6 +56,8 @@ alias gdt-bc='git difftool -t bcomp '
 alias gdd='git difftool --dir-diff '  #/ default kdiff3
 alias gdd-bc='git difftool -t bcomp --dir-diff '
 
+alias glog='git log --first-parent --date=format:"%Y-%m-%d %H:%M:%S" --pretty=format:"%h %Cgreen%ad%Creset %Cred%d%Creset %s %Cblue%ae%Creset" '
+
 alias glgl='git log --graph --all --oneline --decorate'
 alias glg='git log --graph --all --oneline --decorate -15'
 
