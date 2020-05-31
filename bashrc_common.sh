@@ -34,9 +34,16 @@ zmodload -i zsh/complist
 
 
 ##
+#/ enable reverse search in zshell | https://unix.stackexchange.com/a/30169/62821
+bindkey -v
+bindkey "^R" history-incremental-pattern-search-backward
+
+
+##
 #/ Environment for git-diffc
 export TMPDIR=~/tmp    # location of temp folder
 export CLEANUP=0       # don't clean up
 #/ [note] DO NOT SET GIT_EXTERNAL_DIFF. IF YOU DO git-diffc WILL NOT WORK
+
 
 
