@@ -9,6 +9,16 @@ export HISTCONTROL=ignoredups
 
 
 bindkey -v              # Use Vim mode | https://stackoverflow.com/questions/58187542/how-to-setup-vi-editing-mode-for-zsh
+
+#/ edit command line in full screen vim editor in ZSH
+#/ ref: https://unix.stackexchange.com/a/90529/62821
+  export VISUAL=vim
+  autoload edit-command-line; zle -N edit-command-line
+  bindkey -M vicmd v edit-command-line
+#/ bug: after executing command cursol is lost
+#/ --------
+
+
 export LESS=-RFX        # color for Less
 
 
