@@ -12,6 +12,7 @@ bindkey -v              # Use Vim mode | https://stackoverflow.com/questions/581
 
 #/ edit command line in full screen vim editor in ZSH
 #/ ref: https://unix.stackexchange.com/a/90529/62821
+#/ when edit in line normal mode press 'v' to enter full screen
   export VISUAL=vim
   autoload edit-command-line; zle -N edit-command-line
   bindkey -M vicmd v edit-command-line
