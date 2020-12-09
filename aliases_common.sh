@@ -78,6 +78,11 @@ alias gdfni='git diff --no-index '
 
 alias g-stash-ls='git stash list --pretty=format:"%C(red)%h%C(reset) - %C(dim yellow)(%C(bold magenta)%gd%C(dim yellow))%C(reset) %<(70,trunc)%s %C(green)(%cr) %C(bold blue)<%an>%C(reset)"'
 
+#/ list tag by date of creation
+#/ https://stackoverflow.com/questions/6269927/how-can-i-list-all-tags-in-my-git-repository-by-the-date-they-were-created
+alias ggg-git-tag-ls-date="git for-each-ref --sort=creatordate --format '%(refname) %(creatordate)' refs/tags"
+
+
 #/  Utitlities -----------------------------------------------------------
 alias aliasl="alias | less"
 alias aliasg="alias | grep "
