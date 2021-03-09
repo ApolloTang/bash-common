@@ -42,9 +42,12 @@ alias gpl='git pull'
 alias gps='git push'
 alias gc='git commit -v'
 alias gca='git commit -v -a'
+
 alias gb='git branch'
-alias gbc='git rev-parse --abbrev-ref HEAD'   #get current branch
-alias gba='git branch -a'
+alias gb_current='git rev-parse --abbrev-ref HEAD'   #get current branch
+alias gb_all='git branch -a'
+alias gb_date="git for-each-ref --sort=-committerdate refs/heads/ --format='%(HEAD) %(color:yellow)%(refname:short)%(color:reset) - %(color:red)%(objectname:short)%(color:reset) - %(contents:subject) - %(authorname) (%(color:green)%(committerdate:relative)%(color:reset))'"  # https://stackoverflow.com/questions/5188320/how-can-i-get-a-list-of-git-branches-ordered-by-most-recent-commit
+
 alias gmt='git mergetool --tool p4merge'
 
 alias gdf='git diff --no-ext-diff'
