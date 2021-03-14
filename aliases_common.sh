@@ -28,22 +28,20 @@ alias df='df -h'
 alias iterm='open -a iTerm .'
 
 
-
-
 # Navigation -------------------------------------------------------
 alias ..='cd ..'
 alias ...='cd .. ; cd ..'
 
-# ------------------------------------------------------------------
-# git
-#
+#/ ------------------------------------------------------------------
+#/ git
+#/
 alias gst='git status'
 alias gpl='git pull'
 alias gps='git push'
 alias gc='git commit -v'
 alias gca='git commit -v -a'
 
-# list branch by date, https://stackoverflow.com/a/44529712/3136861
+#/ Next alias will list branch by date. Modified after: https://stackoverflow.com/a/44529712/3136861
 alias gb="git for-each-ref --sort=-committerdate refs/heads --format='%(authordate:short) %(color:red)%(objectname:short)%(color:reset) %(color:yellow)%(refname:short)%(color:reset) %(color:blue)%(authorname)%(color:reset) (%(color:green)%(committerdate:relative)%(color:reset))'"
 alias gbc='git rev-parse --abbrev-ref HEAD'   #get current branch
 
@@ -148,7 +146,6 @@ alias simulator-ios='open /Applications/Xcode.app/Contents/Developer/Application
 # node
 #
 alias nodeRlwrap='NODE_NO_READLINE=1 rlwrap node '
-
 
 
 # ------------------------------------------------------------------
