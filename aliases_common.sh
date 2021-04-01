@@ -144,6 +144,7 @@ alias simulator-ios='open /Applications/Xcode.app/Contents/Developer/Application
 # node
 #
 alias nodeRlwrap='NODE_NO_READLINE=1 rlwrap node '
+alias ggg-pkg-scripts-listing='jq {'scripts'} package.json'
 
 
 # ------------------------------------------------------------------
