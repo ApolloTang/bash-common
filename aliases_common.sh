@@ -96,6 +96,7 @@ alias sed-tree="ls -R | grep ":$" | sed -e 's/:$//' -e 's/[^-][^\/]*\//--/g' -e 
 #/  Application ---------------------------------------------------------
 
 alias k3="kdiff3 "
+alias tfm="/usr/local/bin/lf"  # terminal file manager
 
 
 #/ xterm -----------------------------------------------------------------
