@@ -4,11 +4,12 @@
 ###
 ###  Must have
 ###
-alias lf="ls -F"
-alias lfa="ls -Fa"
+alias ls='LC_COLLATE=C gls -h --group-directories-first --color=auto -F'
+  # alias above required GNU installed, works in bash and zsh
+  # from https://unix.stackexchange.com/a/317091/62821
 alias la="ls -a"
-alias ll="ls -lh"
-alias lla="ls -lah"
+alias ll="ls -l"
+alias lla="ls -la"
 alias lld="ls -ld .!(|.)"  #https://askubuntu.com/questions/468901/how-to-show-only-hidden-files-in-terminal
 alias h=history
 alias rm='rm -i'
