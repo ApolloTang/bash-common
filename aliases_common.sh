@@ -102,25 +102,6 @@ alias tfm="/usr/local/bin/lf"  # terminal file manager
 #/ xterm -----------------------------------------------------------------
 # alias xterm='xterm -en en_US.UTF-8 &'
 
-#-------------------------------------------------------------------------------
-# I got the following from, and mod'd it:
-# http://hints.macworld.com/article.php?story=20020716005123797
-#    The following aliases (save & show) are for saving frequently used directories
-#    You can save a directory using an abbreviation of your choosing. Eg. save ms
-#    You can subsequently move to one of the saved directories by using cd with
-#    the abbreviation you chose. Eg. cd ms  (Note that no '$' is necessary.)
-# DOES NOT WORK IN ZSH
-#
-# if [ ! -f ~/.dirs ]; then  # if doesn't exist, create it
-#   touch ~/.dirs
-# fi
-#
-# alias show='cat ~/.dirs'
-# save (){
-#   command sed "/!$/d" ~/.dirs > ~/.dirs1; \mv ~/.dirs1 ~/.dirs; echo "$@"=\"`pwd`\" >> ~/.dirs; source ~/.dirs ;
-# }
-# source ~/.dirs  # Initialization for the above 'save' facility: source the .sdirs file
-# shopt -s cdable_vars # set the bash option so that no '$' is required when using the above facility
 
 #-------------------------------------------------------------------------------
 # Shows most used commands, cool script I got this from: http://lifehacker.com/software/how-to/turbocharge-your-terminal-274317.php
