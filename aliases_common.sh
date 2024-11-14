@@ -142,6 +142,8 @@ alias lllAliasCommon='less $pppBashrcCommon/aliases_common.sh'
 # Misc
 #
 ggg-pbcopy() {
+    # pbcopy that work in linux and mac
+
     local tmp=$(cat)
 
     if [[ "$(uname)" == "Darwin" ]]; then
@@ -157,11 +159,11 @@ ggg-pbcopy() {
     echo "$tmp has been copied to pasteboard"
 }
 
-ggg-getDate1() {
+ggg-topbcopy-date1() {
     date_formatted=$(date +'%Y.%m.%d')
     echo "$date_formatted" | ggg-pbcopy
 }
-ggg-getDate2() {
+ggg-topbcopy-date2() {
     date_formatted=$(date +'%Y-%m-%d')
     echo "$date_formatted" | ggg-pbcopy
 }
