@@ -135,9 +135,36 @@ alias ggg-pkg-scripts-listing='jq {'scripts'} package.json'
 # ------------------------------------------------------------------
 # Quick view
 #
-alias lllVimDoc='less $pppVimrc/vimrc-doc.txt'
 alias lllAliasCommon='less $pppBashrcCommon/aliases_common.sh'
 
+
+# ------------------------------------------------------------------
+# Misc
+#
+ggg-pbcopy() {
+    local tmp=$(cat)
+
+    if [[ "$(uname)" == "Darwin" ]]; then
+        echo "$tmp" | pbcopy  # macOS (Darwin)
+    # Check for Linux and xclip availability
+    elif [[ "$(uname)" == "Linux" ]] && command -v xclip &> /dev/null; then
+        echo "$tmp" |  xclip -selection clipboard  # Linux (using xclip)
+    else
+        echo "Error: Unsupported OS or missing xclip on Linux." >&2
+        return 1
+    fi
+
+    echo "$tmp has been copied to pasteboard"
+}
+
+ggg-getDate1() {
+    date_formatted=$(date +'%Y.%m.%d')
+    echo "$date_formatted" | ggg-pbcopy
+}
+ggg-getDate2() {
+    date_formatted=$(date +'%Y-%m-%d')
+    echo "$date_formatted" | ggg-pbcopy
+}
 
 ################################################
 #echo '.bash_aliases reading done'
